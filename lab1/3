@@ -1,0 +1,25 @@
+'use strict';
+
+const arr =[
+true,
+"car",
+15,
+25,
+50,
+"house",
+false,
+true,
+];
+
+const types = {
+    number: 0,
+    string: 0,
+    boolean: 0,
+};
+
+for (const item of arr) {
+    const type = typeof item;
+    types[type] += 1;
+}
+
+console.dir(types);
